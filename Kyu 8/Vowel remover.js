@@ -10,4 +10,4 @@
 
 function shortcut (string) {
     return string.match(/[^aeiou]/g) ? string.match(/[^aeiou]/g).join('') : ''
-  }
+}
