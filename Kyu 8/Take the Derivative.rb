@@ -19,4 +19,4 @@ def derive(coefficient, exponent)
     new_coef = (coefficient * exponent).to_s
     new_exp = (exponent - 1).to_s
     return  new_coef+'x^' +new_exp
-  end
+end
