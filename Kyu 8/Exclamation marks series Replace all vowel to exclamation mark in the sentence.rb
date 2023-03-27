@@ -16,4 +16,4 @@ def replace(s)
       end
     end
     return sArray.join('')
-  end
+end
