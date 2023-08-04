@@ -19,8 +19,6 @@ def to_camel_case(str)
           el
         end
         }.join('')
-  
-  
     
 end
 
