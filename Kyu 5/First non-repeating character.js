@@ -6,12 +6,12 @@
 
 // If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
 
-def  first_non_repeating_letter(s) 
-  return '' if s == ''
-  s.downcase.each_char.with_index do |letter,idx|
-    if s.downcase.count(letter) == 1
+def  first_non_repeating_letter(s)
+  arr = s.downcase.split('')
+  arr.each_with_index do |el, idx|
+    if arr.index(el) === arr.rindex(el)
       return s[idx]
     end
-  end 
-  return ''
+  end
+  return "" 
 end
