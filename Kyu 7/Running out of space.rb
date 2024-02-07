@@ -5,23 +5,10 @@
 # FUNDAMENTALS
 
 def spacey(array)
-    newArr = []
-    i = 0
-    k = 0
-    word = ''
-    while i < array.length
-      if i == 0
-        newArr << array[i] 
-      elsif i > 0
-        while k <= i
-          word += array[k]
-          k += 1
-        end
-      newArr << word
-      k = 0
-      end      
-      i += 1
-      word = ''
-    end
-    return newArr
+  i = 1
+  while i <= array.length - 1
+    array[i] = array[i - 1] + array[i]
+    i += 1
   end
+  array
+end
