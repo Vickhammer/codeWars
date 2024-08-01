@@ -5,6 +5,17 @@
 # Example
 # findMissing([1, 3, 5, 9, 11]) == 7
 
+# def find_missing(sequence)
+#   differences = Hash.new()
+#   (0...sequence.length - 1).each do |i|
+#      cd = sequence[i+1] - sequence[i]
+#      differences[i] = cd
+#   end
+#   common_difference = differences.values.group_by { |e| e }.values.max_by(&:size).first
+#   val = differences.values.select{|el| differences.values.count(el) == 1}
+#   return sequence[differences.key(val[0])] + common_difference
+# end
+
 def find_missing(arr)
     ((arr.length + 1) * (arr[0] + arr[-1]))/2 - arr.sum
 end
