@@ -9,4 +9,4 @@ def pangram?(string)
       return false if !string.include?(letter)
     end
     true
-  end
+end
